@@ -60,21 +60,6 @@ export default function Home() {
           </h2>
           <Counter start={0} />
         </section>
-        <section style="    grid-column: 3;">
-          <img
-            src="/logo.svg"
-            width="128"
-            height="128"
-            alt="the fresh logo: a sliced lemon dripping with juice"
-          />
-          <p>
-            Welcome to `fresh`, y'all.
-          </p>
-          <h2>
-            And remember, keep cool.
-          </h2>
-          <Counter start={0} />
-        </section>
       </div>
 
     </>
