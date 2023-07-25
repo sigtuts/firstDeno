@@ -16,6 +16,7 @@ export default function Home() {
      gap: 4px;
      grid-auto-flow: column;">
         <section style="    grid-column: 1;">
+        <h1>Wlcome to my Fresh App</h1>
           <img
             src="/logo.svg"
             width="128"
