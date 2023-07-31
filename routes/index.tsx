@@ -23,7 +23,7 @@ export default function Home() {
             alt="the fresh logo: a sliced lemon dripping with juice"
           />
           <p>
-            Welcome to `fresh`, y'all.
+            Welcome to `fresh`, y'all. from the Philippines.
           </p>
           <h2>
             And remember, keep cool.
