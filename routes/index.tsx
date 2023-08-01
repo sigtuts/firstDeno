@@ -28,7 +28,7 @@ export default function Home() {
           <h2>
             And remember, keep cool.
           </h2>
-          <h3>Are you ok?</h3>
+          <h3>Are you ok??</h3>
           <Counter start={0} />
         </section>
       </div>
