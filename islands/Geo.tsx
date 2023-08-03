@@ -10,7 +10,7 @@
   }
   return(
     <div>
-      <p>You are at LAT{latitude}</p>
+      <p>You are at LAT</p>
     </div>
   )
 }
