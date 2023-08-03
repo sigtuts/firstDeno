@@ -12,7 +12,7 @@ export default function Geo() {
   }
   return (
     <div>
-      <p>You are at LAT{geo[0]}</p>
+      <p>You are at LAT{geo[0] | 'nothing'}</p>
     </div>
   );
 }
