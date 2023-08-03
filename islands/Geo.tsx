@@ -1,17 +1,18 @@
- export default function Geo() {
+export default function Geo() {
+  let geo =[]
   if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(function go (position) {
+    navigator.geolocation.getCurrentPosition(function (position) {
       var latitude = position.coords.latitude;
       var longitude = position.coords.longitude;
       console.log('Latitude: ' + latitude + ', Longitude: ' + longitude);
-      return latitude
+      geo.push(latitude)
     });
   } else {
     console.log('Geolocation is not supported by this browser.');
   }
-  return(
+  return (
     <div>
-      <p>You are at LAT{go()}</p>
+      <p>You are at LAT{geo[0]}</p>
     </div>
-  )
+  );
 }
