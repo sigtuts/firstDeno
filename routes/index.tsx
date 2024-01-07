@@ -24,13 +24,11 @@ export default function Home() {
             alt="the fresh logo: a sliced lemon dripping with juice"
           />
           <p>
-            Welcome to `fresh`, y'all. from the Philippines.
+            Welcome to `fresh`, y'all. from the Norway.
           </p>
           <h2>
             And remember, keep cool.
           </h2>
-          <h3>Are you ok??</h3>
-          <h4>Hello??</h4>
           <Geo />
           <Counter start={0} />
         </section>
