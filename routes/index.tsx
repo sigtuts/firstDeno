@@ -9,23 +9,24 @@ export default function Home() {
       <Head>
         <title>Fresh App</title>
       </Head>
+      <body style="background-color:grey">
+        
       <div style="    display: grid;
      display: grid;
      justify-content: space-around;
      align-content: center;
-   
+     
      gap: 4px;
-     grid-auto-flow: column;
-     background-color:black">
+     grid-auto-flow: column;">
         <section style="    grid-column: 1;">
           <img
             src="/logo.svg"
             width="128"
             height="128"
             alt="the fresh logo: a sliced lemon dripping with juice"
-          />
+            />
           <p>
-            Welcome to `fresh`, y'all. from the Norway.
+            Welcome to `fresh`, y'all
           </p>
           <h2>
             And remember, keep cool.
@@ -34,6 +35,7 @@ export default function Home() {
           <Counter start={0} />
         </section>
       </div>
+      </body>
 
     </>
   );
