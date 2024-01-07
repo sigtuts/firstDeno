@@ -15,7 +15,8 @@ export default function Home() {
      align-content: center;
    
      gap: 4px;
-     grid-auto-flow: column;">
+     grid-auto-flow: column;
+     background-color:black">
         <section style="    grid-column: 1;">
           <img
             src="/logo.svg"
