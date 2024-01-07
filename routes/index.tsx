@@ -9,7 +9,7 @@ export default function Home() {
       <Head>
         <title>Fresh App</title>
       </Head>
-      <body style="background-color:#efefef">
+      <body style="background-color:#232B32">
         
       <div style="    display: grid;
      display: grid;
