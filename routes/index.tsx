@@ -11,11 +11,12 @@ export default function Home() {
       </Head>
       <body style="background-color:#232B32">
         
-      <div style="    display: grid;
+      <div style="
+      display: grid;
      display: grid;
      justify-content: space-around;
      align-content: center;
-     
+     color:#efefef;
      gap: 4px;
      grid-auto-flow: column;">
         <section style="    grid-column: 1;">
