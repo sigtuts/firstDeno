@@ -1,19 +1,29 @@
-import { useState } from 'react';
-export default function Geo() {
-  const [message, setMessage] = useState('');
-  const handleChange = (event) => {
+import { h, Component } from 'preact';
+
+export default class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      message: '',
+    };
+  }
+
+  handleChange = (event) => {
     // 👇 Get input value from "event"
-    setMessage(event.target.value);
+    this.setState({ message: event.target.value });
   };
-  return (
-    <div>
-      <input
-        type="text"
-        id="message"
-        name="message"
-        onChange={handleChange}
-      />
-      <h2>Message: {message}</h2>
-    </div>
-  );
+
+  render() {
+    return (
+      <div>
+        <input
+          type="text"
+          id="message"
+          name="message"
+          onChange={this.handleChange}
+        />
+        <h2>Message: {this.state.message}</h2>
+      </div>
+    );
+  }
 }
