@@ -1,7 +1,6 @@
 import { Head } from "$fresh/runtime.ts";
 import Counter from "../islands/Counter.tsx";
 import Geo from '../islands/Geo.tsx'
-import Add from '../islands/Add.tsx'
 
 
 export default function Home() {
@@ -27,7 +26,6 @@ export default function Home() {
             height="128"
             alt="the fresh logo: a sliced lemon dripping with juice"
             />
-            <Add />
         </section>
       </div>
       </body>
