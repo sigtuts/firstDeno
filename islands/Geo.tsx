@@ -1,18 +1,19 @@
+import { useState } from 'react';
 export default function Geo() {
-  let geo =[]
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(function (position) {
-      var latitude = position.coords.latitude;
-      var longitude = position.coords.longitude;
-      console.log('Latitude: ' + latitude + ', Longitude: ' + longitude);
-      geo.push(latitude)
-    });
-  } else {
-    console.log('Geolocation is not supported by this browser.');
-  }
+  const [message, setMessage] = useState('');
+  const handleChange = (event) => {
+    // 👇 Get input value from "event"
+    setMessage(event.target.value);
+  };
   return (
     <div>
-      <p>You are at LAT{geo[0] | 'nothing'}</p>
+      <input
+        type="text"
+        id="message"
+        name="message"
+        onChange={handleChange}
+      />
+      <h2>Message: {message}</h2>
     </div>
   );
 }

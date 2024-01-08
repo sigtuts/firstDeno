@@ -27,6 +27,7 @@ export default function Home() {
             alt="the fresh logo: a sliced lemon dripping with juice"
             />
         </section>
+        <Geo />
       </div>
       </body>
 
