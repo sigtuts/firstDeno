@@ -1,6 +1,7 @@
 import { Head } from "$fresh/runtime.ts";
 import Counter from "../islands/Counter.tsx";
 import Geo from '../islands/Geo.tsx'
+import Add from '../islands/Add.tsx'
 
 
 export default function Home() {
@@ -33,6 +34,7 @@ export default function Home() {
             And remember, keep cool.
           </h2>
           <Geo />
+          <Add />
           <Counter start={0} />
         </section>
       </div>
