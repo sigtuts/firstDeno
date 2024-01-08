@@ -1,6 +1,6 @@
-export default function <Add></Add>(props: CounterProps) {
+export default function Add() {
 
-    
+
 
     return (
       <div>
