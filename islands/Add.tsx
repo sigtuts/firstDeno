@@ -1,4 +1,4 @@
-import { h, render } from 'preact';
+import { h } from 'preact';
 import { useState } from 'preact/hooks';
 
 const Add = () => {
@@ -34,8 +34,4 @@ const Add = () => {
   );
 };
 
-// Render the component to the root element
-const rootElement = document.getElementById('root');
-if (rootElement) {
-  render(<Add />, rootElement);
-}
+export default Add;
