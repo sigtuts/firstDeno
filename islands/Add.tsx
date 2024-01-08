@@ -4,6 +4,7 @@ import { useState } from 'preact/hooks';
 const Add = () => {
   const [firstInput, setFirstInput] = useState('');
   const [secondInput, setSecondInput] = useState('');
+  const [sum, setSum] = useState(null);
 
   const handleInputChange = (input, value) => {
     if (input === 'fir') {
@@ -13,7 +14,10 @@ const Add = () => {
     }
   };
 
-  const sum = parseInt(firstInput) + parseInt(secondInput);
+  const handleCalculateClick = () => {
+    const result = parseInt(firstInput) + parseInt(secondInput);
+    setSum(isNaN(result) ? null : result);
+  };
 
   return (
     <div>
@@ -29,7 +33,8 @@ const Add = () => {
         value={secondInput}
         onInput={(e) => handleInputChange('sec', e.target.value)}
       />
-      <p>{isNaN(sum) ? 'Invalid input' : `Sum: ${sum}`}</p>
+      <button onClick={handleCalculateClick}>Calculate</button>
+      <p>{sum !== null ? `Sum: ${sum}` : 'Invalid input'}</p>
     </div>
   );
 };
