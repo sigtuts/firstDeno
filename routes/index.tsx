@@ -2,7 +2,7 @@ import { Head } from "$fresh/runtime.ts";
 import Counter from "../islands/Counter.tsx";
 import Geo from '../islands/Geo.tsx'
 import Add from '../islands/Add.tsx'
-import Test from "../islands/Test.tsx ";
+import YourComponents from "../islands/Test.tsx ";
 
 
 export default function Home() {
