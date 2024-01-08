@@ -33,7 +33,6 @@ export default function Home() {
           <h2>
             And remember, keep cool.
           </h2>
-          <Geo />
           <Add />
           <Counter start={0} />
         </section>
