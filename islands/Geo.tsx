@@ -1,29 +1,28 @@
-import { h, Component } from 'preact';
+import { useState } from "preact/hooks";
 
-export default class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      message: '',
-    };
-  }
-
-  handleChange = (event) => {
-    // 👇 Get input value from "event"
-    this.setState({ message: event.target.value });
+export default function Geo() {
+  const [count, setCount] = useState(0);
+  const [count1, setCount2] = useState(0);
+  const handleInputChange = (event) => {
+    // Use parseInt to convert the input value to a number
+    const newValue = parseInt( count.value);
+    setCount(newValue);
   };
-
-  render() {
-    return (
-      <div>
-        <input
-          type="text"
-          id="message"
-          name="message"
-          onChange={this.handleChange}
-        />
-        <h2>Message: {this.state.message}</h2>
-      </div>
-    );
-  }
+  return (
+    <div>
+      <h1>Hello StackBlitz!</h1>
+      <p>Start editing to see some magic happen :)</p>
+      <input 
+        type="text" 
+        value={count} 
+        onChange={handleInputChange} 
+      />
+      <input 
+        type="text" 
+        value={count1} 
+        onChange={handleInputChange} 
+      />
+      <p>{count}</p>
+    </div>
+  );
 }
