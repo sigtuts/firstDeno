@@ -26,8 +26,8 @@ export default function Home() {
             height="128"
             alt="the fresh logo: a sliced lemon dripping with juice"
             />
-        </section>
         <Geo />
+        </section>
       </div>
       </body>
 
