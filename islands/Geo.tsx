@@ -10,15 +10,13 @@ export default function Geo() {
   };
   return (
     <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
       <input 
-        type="text" 
+        type="number" 
         value={count} 
         onChange={handleInputChange} 
       />
       <input 
-        type="text" 
+        type="number" 
         value={count1} 
         onChange={handleInputChange} 
       />
