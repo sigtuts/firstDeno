@@ -8,7 +8,7 @@ export default function Geo() {
 
 	return (
 			<div>Counter: {num}</div>
-			<input type="number" onInput={(e) => setValue(e.target.value)}/>
-
+			<input onInput={(e) => setValue(e.target.value)}/>
+	    <input onInput={(e) => setValue2(e.target.value)}/>
 	);
 }
