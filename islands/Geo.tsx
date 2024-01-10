@@ -5,7 +5,7 @@ export default function Geo() {
   const [count1, setCount2] = useState(0);
   const handleInputChange = (event) => {
     // Use parseInt to convert the input value to a number
-    const newValue = parseInt( count.value);
+    const newValue = parseInt(event.target.value);
     setCount(newValue);
   };
   return (
